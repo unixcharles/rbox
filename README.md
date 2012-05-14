@@ -2,7 +2,7 @@ rbox
 ====
 
 A Ruby wrapper for box.com API version 1.
-(also known as box.net, known at box.com but just call me box its okay)
+(also known as box.net, now at box.com but just call me box its okay)
 
 Featuring: my personal fight with Box api, resulting in  viable wrapper with a test suite that passes and just the features I needed for what I had to do. Look at the client specs.
 
