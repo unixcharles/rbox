@@ -1,0 +1,184 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.box.net/api/1.0/rest?action=get_account_tree&api_key=unique-api-token&auth_token=unique-auth-token&params%5B%5D%5B%5D=nozip&folder_id=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      server:
+      - nginx
+      date:
+      - Mon, 14 May 2012 11:56:17 GMT
+      content-type:
+      - text/xml
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      set-cookie:
+      - z=pa553f9v0sm7vpvq0m5n3ou413; path=/; domain=.box.net; HttpOnly, box_visitor_id=4fb0f2e0ce3572.91188946;
+        expires=Tue, 14-May-2013 11:56:16 GMT; path=/; domain=.box.net
+      expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      cache-control:
+      - cache, must-revalidate
+      pragma:
+      - public
+    body:
+      encoding: ASCII-8BIT
+      string: ! "<?xml version='1.0' encoding='UTF-8' ?>\r\n<response><status>listing_ok</status><tree>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</tree></response>"
+    http_version: 
+  recorded_at: Mon, 14 May 2012 11:56:18 GMT
+- request:
+    method: get
+    uri: https://www.box.net/api/1.0/rest?action=get_account_tree&api_key=unique-api-token&auth_token=unique-auth-token&params%5B%5D=nozip&folder_id=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      server:
+      - nginx
+      date:
+      - Mon, 14 May 2012 12:01:07 GMT
+      content-type:
+      - text/xml
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      set-cookie:
+      - z=hcnocpi7hov9c4u480tmkbm5v6; path=/; domain=.box.net; HttpOnly, box_visitor_id=4fb0f402a5f212.48011704;
+        expires=Tue, 14-May-2013 12:01:06 GMT; path=/; domain=.box.net
+      expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      cache-control:
+      - cache, must-revalidate
+      pragma:
+      - public
+    body:
+      encoding: ASCII-8BIT
+      string: ! "<?xml version='1.0' encoding='UTF-8' ?>\r\n<response><status>listing_ok</status><tree><folder
+        id=\"0\" name=\"\" description=\"\" user_id=\"176951347\" shared=\"\" shared_link=\"\"
+        permissions=\"douv\" size=\"12205491\" file_count=\"\" created=\"\" updated=\"\"
+        ><tags></tags><folders><folder id=\"267863921\" name=\"Folders\" description=\"SF
+        pictures and screenshots\" user_id=\"176951347\" shared=\"0\" shared_link=\"\"
+        permissions=\"kcfgtedopnhsuv\" size=\"12199872\" file_count=\"9\" created=\"1335346603\"
+        updated=\"1335467075\" ><tags></tags><files><file id=\"2104476517\" file_name=\"Screen
+        Shot 2012-04-04 at 12.20.06 PM.png\" shared=\"0\" sha1=\"ee882ea8582314b7e1df2d6afbf13df96f4349c9\"
+        created=\"1335346618\" updated=\"1335346619\" size=\"49883\" shared_link=\"\"
+        description=\"\" user_id=\"176951347\" thumbnail=\"https://www.box.net/api/data/bf1007/public/120120221/small_thumb/2012-04-25/6b88f2c54611b7ce6cd5071cea70e273.gif\"
+        small_thumbnail=\"https://www.box.net/api/data/bf1007/public/120120221/small_thumb/2012-04-25/6b88f2c54611b7ce6cd5071cea70e273.gif\"
+        large_thumbnail=\"https://www.box.net/api/data/bf1007/public/120120221/large_thumb/2012-04-25/6b88f2c54611b7ce6cd5071cea70e273.jpg\"
+        larger_thumbnail=\"https://www.box.net/api/data/bf1007/public/120120221/larger_thumb/2012-04-25/6b88f2c54611b7ce6cd5071cea70e273.jpg\"
+        preview_thumbnail=\"https://www.box.net/api/data/bf1007/public/120120221/preview_thumb/2012-04-25/6b88f2c54611b7ce6cd5071cea70e273.jpg\"
+        permissions=\"gdcenopstuvh\"  ><tags></tags></file><file id=\"2104476803\"
+        file_name=\"Screen Shot 2012-04-24 at 5.01.57 PM.png\" shared=\"1\" sha1=\"de6024da64929d6856b8a99540f0d0307f4fa9f7\"
+        created=\"1335346624\" updated=\"1336755495\" size=\"17021\" shared_link=\"https://www.box.net/s/d298fa7d224ed7ece178\"
+        description=\"\" user_id=\"176951347\" thumbnail=\"https://www.box.net/api/data/bf2011/public/120120202/small_thumb/2012-04-25/fba76a6f01d6afc824f149747c616a54.gif\"
+        small_thumbnail=\"https://www.box.net/api/data/bf2011/public/120120202/small_thumb/2012-04-25/fba76a6f01d6afc824f149747c616a54.gif\"
+        large_thumbnail=\"https://www.box.net/api/data/bf2011/public/120120202/large_thumb/2012-04-25/fba76a6f01d6afc824f149747c616a54.jpg\"
+        larger_thumbnail=\"https://www.box.net/api/data/bf2011/public/120120202/larger_thumb/2012-04-25/fba76a6f01d6afc824f149747c616a54.jpg\"
+        preview_thumbnail=\"https://www.box.net/api/data/bf2011/public/120120202/preview_thumb/2012-04-25/fba76a6f01d6afc824f149747c616a54.jpg\"
+        permissions=\"gdcenopstuvh\"  ><tags></tags></file><file id=\"2104478953\"
+        file_name=\"IMG_0173.jpg\" shared=\"1\" sha1=\"561e4f35fc9f178d4076d75de1317b717e4ee38f\"
+        created=\"1335346661\" updated=\"1336752784\" size=\"1897234\" shared_link=\"https://www.box.net/s/2e00f86bb4ebb9cd5130\"
+        description=\"\" user_id=\"176951347\" thumbnail=\"https://www.box.net/api/data/bf1008/public/120120222/small_thumb/2012-04-25/e060f53b5c7323c2550494517c448690.gif\"
+        small_thumbnail=\"https://www.box.net/api/data/bf1008/public/120120222/small_thumb/2012-04-25/e060f53b5c7323c2550494517c448690.gif\"
+        large_thumbnail=\"https://www.box.net/api/data/bf1008/public/120120222/large_thumb/2012-04-25/e060f53b5c7323c2550494517c448690.jpg\"
+        larger_thumbnail=\"https://www.box.net/api/data/bf1008/public/120120222/larger_thumb/2012-04-25/e060f53b5c7323c2550494517c448690.jpg\"
+        preview_thumbnail=\"https://www.box.net/api/data/bf1008/public/120120222/preview_thumb/2012-04-25/e060f53b5c7323c2550494517c448690.jpg\"
+        permissions=\"gdcenopstuvh\"  ><tags></tags></file><file id=\"2104480929\"
+        file_name=\"IMG_0174.jpg\" shared=\"1\" sha1=\"0de671d8bb73b1112dd913ea5e33b713479689a4\"
+        created=\"1335346691\" updated=\"1335365586\" size=\"2028241\" shared_link=\"https://www.box.net/s/b001ec95feb815091d70\"
+        description=\"\" user_id=\"176951347\" thumbnail=\"https://www.box.net/api/data/bf2012/public/120120126/small_thumb/2012-04-25/cd4bb39fbb49b5ad8f051aab2bbad62b.gif\"
+        small_thumbnail=\"https://www.box.net/api/data/bf2012/public/120120126/small_thumb/2012-04-25/cd4bb39fbb49b5ad8f051aab2bbad62b.gif\"
+        large_thumbnail=\"https://www.box.net/api/data/bf2012/public/120120126/large_thumb/2012-04-25/cd4bb39fbb49b5ad8f051aab2bbad62b.jpg\"
+        larger_thumbnail=\"https://www.box.net/api/data/bf2012/public/120120126/larger_thumb/2012-04-25/cd4bb39fbb49b5ad8f051aab2bbad62b.jpg\"
+        preview_thumbnail=\"https://www.box.net/api/data/bf2012/public/120120126/preview_thumb/2012-04-25/cd4bb39fbb49b5ad8f051aab2bbad62b.jpg\"
+        permissions=\"gdcenopstuvh\"  ><tags></tags></file><file id=\"2104483307\"
+        file_name=\"IMG_0175.jpg\" shared=\"0\" sha1=\"d6f626c8ef12818744d0e144929203028343f37e\"
+        created=\"1335346726\" updated=\"1335346738\" size=\"2038614\" shared_link=\"\"
+        description=\"\" user_id=\"176951347\" thumbnail=\"https://www.box.net/api/data/bf1007/public/120120221/small_thumb/2012-04-25/b776f9810b5bb5cd2fc965ad4e8232bf.gif\"
+        small_thumbnail=\"https://www.box.net/api/data/bf1007/public/120120221/small_thumb/2012-04-25/b776f9810b5bb5cd2fc965ad4e8232bf.gif\"
+        large_thumbnail=\"https://www.box.net/api/data/bf1007/public/120120221/large_thumb/2012-04-25/b776f9810b5bb5cd2fc965ad4e8232bf.jpg\"
+        larger_thumbnail=\"https://www.box.net/api/data/bf1007/public/120120221/larger_thumb/2012-04-25/b776f9810b5bb5cd2fc965ad4e8232bf.jpg\"
+        preview_thumbnail=\"https://www.box.net/api/data/bf1007/public/120120221/preview_thumb/2012-04-25/b776f9810b5bb5cd2fc965ad4e8232bf.jpg\"
+        permissions=\"gdcenopstuvh\"  ><tags></tags></file><file id=\"2104486111\"
+        file_name=\"IMG_0176.jpg\" shared=\"0\" sha1=\"a1ee54882db52271c8e1c38bf2120c66968d280e\"
+        created=\"1335346766\" updated=\"1335346779\" size=\"2121162\" shared_link=\"\"
+        description=\"\" user_id=\"176951347\" thumbnail=\"https://www.box.net/api/data/bf2011/public/120120202/small_thumb/2012-04-25/909df8dc70c833c72d668fcda456fc97.gif\"
+        small_thumbnail=\"https://www.box.net/api/data/bf2011/public/120120202/small_thumb/2012-04-25/909df8dc70c833c72d668fcda456fc97.gif\"
+        large_thumbnail=\"https://www.box.net/api/data/bf2011/public/120120202/large_thumb/2012-04-25/909df8dc70c833c72d668fcda456fc97.jpg\"
+        larger_thumbnail=\"https://www.box.net/api/data/bf2011/public/120120202/larger_thumb/2012-04-25/909df8dc70c833c72d668fcda456fc97.jpg\"
+        preview_thumbnail=\"https://www.box.net/api/data/bf2011/public/120120202/preview_thumb/2012-04-25/909df8dc70c833c72d668fcda456fc97.jpg\"
+        permissions=\"gdcenopstuvh\"  ><tags></tags></file><file id=\"2104488123\"
+        file_name=\"IMG_0177.jpg\" shared=\"1\" sha1=\"899739a11a94d25a37b73f4879ee0ffe5801a603\"
+        created=\"1335346796\" updated=\"1336753212\" size=\"2093723\" shared_link=\"https://www.box.net/s/405608c9660a0b06bcbc\"
+        description=\"\" user_id=\"176951347\" thumbnail=\"https://www.box.net/api/data/bf1008/public/120120222/small_thumb/2012-04-25/33314f2f644873f6614980f543235f16.gif\"
+        small_thumbnail=\"https://www.box.net/api/data/bf1008/public/120120222/small_thumb/2012-04-25/33314f2f644873f6614980f543235f16.gif\"
+        large_thumbnail=\"https://www.box.net/api/data/bf1008/public/120120222/large_thumb/2012-04-25/33314f2f644873f6614980f543235f16.jpg\"
+        larger_thumbnail=\"https://www.box.net/api/data/bf1008/public/120120222/larger_thumb/2012-04-25/33314f2f644873f6614980f543235f16.jpg\"
+        preview_thumbnail=\"https://www.box.net/api/data/bf1008/public/120120222/preview_thumb/2012-04-25/33314f2f644873f6614980f543235f16.jpg\"
+        permissions=\"gdcenopstuvh\"  ><tags></tags></file><file id=\"2104492027\"
+        file_name=\"IMG_0178.jpg\" shared=\"1\" sha1=\"34805dd1e47fa31093b7fd0fe8477b02a5b460e5\"
+        created=\"1335346852\" updated=\"1335365603\" size=\"1952504\" shared_link=\"https://www.box.net/s/cb43cb91ef550696177c\"
+        description=\"\" user_id=\"176951347\" thumbnail=\"https://www.box.net/api/data/bf2011/public/120120202/small_thumb/2012-04-25/35123216b38aed80cb5c54f1e6065547.gif\"
+        small_thumbnail=\"https://www.box.net/api/data/bf2011/public/120120202/small_thumb/2012-04-25/35123216b38aed80cb5c54f1e6065547.gif\"
+        large_thumbnail=\"https://www.box.net/api/data/bf2011/public/120120202/large_thumb/2012-04-25/35123216b38aed80cb5c54f1e6065547.jpg\"
+        larger_thumbnail=\"https://www.box.net/api/data/bf2011/public/120120202/larger_thumb/2012-04-25/35123216b38aed80cb5c54f1e6065547.jpg\"
+        preview_thumbnail=\"https://www.box.net/api/data/bf2011/public/120120202/preview_thumb/2012-04-25/35123216b38aed80cb5c54f1e6065547.jpg\"
+        permissions=\"gdcenopstuvh\"  ><tags></tags></file><file id=\"2114830567\"
+        file_name=\"Google doc.gdoc\" shared=\"0\" sha1=\"ab81d1a4d636995bc280cfed9d816e51bf9bc0ea\"
+        created=\"1335462535\" updated=\"1335462536\" size=\"1490\" shared_link=\"\"
+        description=\"\" user_id=\"176951347\" thumbnail=\"https://www.box.net/api/thumbs/27x30/text/gdoc.gif\"
+        small_thumbnail=\"https://www.box.net/api/thumbs/27x30/text/gdoc.gif\" large_thumbnail=\"https://www.box.net/api/thumbs/43x51/text/gdoc.gif\"
+        larger_thumbnail=\"https://www.box.net/api/thumbs/43x51/text/gdoc.gif\" preview_thumbnail=\"https://www.box.net/api/thumbs/242x286/text/gdoc.png\"
+        permissions=\"gdcenopstuvh\"  ><tags></tags></file></files></folder></folders><files><file
+        id=\"2104474269\" file_name=\"flight_confirm_mars_2012.txt\" shared=\"0\"
+        sha1=\"194e96d4d50f56ca76ff0d267d0806fdbc717833\" created=\"1335346583\" updated=\"1335346583\"
+        size=\"1498\" shared_link=\"\" description=\"\" user_id=\"176951347\" thumbnail=\"https://www.box.net/api/thumbs/27x30/text/txt.gif\"
+        small_thumbnail=\"https://www.box.net/api/thumbs/27x30/text/txt.gif\" large_thumbnail=\"https://www.box.net/api/thumbs/43x51/text/txt.gif\"
+        larger_thumbnail=\"https://www.box.net/api/thumbs/43x51/text/txt.gif\" preview_thumbnail=\"https://www.box.net/api/thumbs/242x286/text/txt.png\"
+        permissions=\"gdcenopstuvh\"  ><tags></tags></file><file id=\"2184550975\"
+        file_name=\"Google spreadsheet.gsheet\" shared=\"0\" sha1=\"25606cc8ee141c5dde5741bf0d31817aa6778e6e\"
+        created=\"1336405220\" updated=\"1336405221\" size=\"4096\" shared_link=\"\"
+        description=\"\" user_id=\"176951347\" thumbnail=\"https://www.box.net/api/thumbs/27x30/text/gsheet.gif\"
+        small_thumbnail=\"https://www.box.net/api/thumbs/27x30/text/gsheet.gif\" large_thumbnail=\"https://www.box.net/api/thumbs/43x51/text/gsheet.gif\"
+        larger_thumbnail=\"https://www.box.net/api/thumbs/43x51/text/gsheet.gif\"
+        preview_thumbnail=\"https://www.box.net/api/thumbs/242x286/text/gsheet.png\"
+        permissions=\"gdcenopstuvh\"  ><tags></tags></file><file id=\"2098840097\"
+        file_name=\"oscar.txt\" shared=\"0\" sha1=\"2063d7ea532210365ec3ff8b6da9a406c4622c20\"
+        created=\"1335282163\" updated=\"1335283903\" size=\"17\" shared_link=\"\"
+        description=\"\" user_id=\"176951347\" thumbnail=\"https://www.box.net/api/thumbs/27x30/text/txt.gif\"
+        small_thumbnail=\"https://www.box.net/api/thumbs/27x30/text/txt.gif\" large_thumbnail=\"https://www.box.net/api/thumbs/43x51/text/txt.gif\"
+        larger_thumbnail=\"https://www.box.net/api/thumbs/43x51/text/txt.gif\" preview_thumbnail=\"https://www.box.net/api/thumbs/242x286/text/txt.png\"
+        permissions=\"gdcenopstuvh\"  ><tags></tags></file><file id=\"1914670306\"
+        file_name=\"Some document.webdoc\" shared=\"1\" sha1=\"01298c01639d867f841df8043cedc891cf11d8f0\"
+        created=\"1332950493\" updated=\"1336755465\" size=\"4\" shared_link=\"https://www.box.net/s/9235100a59f9c06ebf4a\"
+        description=\"\" user_id=\"176951347\" thumbnail=\"https://www.box.net/api/thumbs/27x30/text/webdoc.gif\"
+        small_thumbnail=\"https://www.box.net/api/thumbs/27x30/text/webdoc.gif\" large_thumbnail=\"https://www.box.net/api/thumbs/43x51/text/webdoc.gif\"
+        larger_thumbnail=\"https://www.box.net/api/thumbs/43x51/text/webdoc.gif\"
+        preview_thumbnail=\"https://www.box.net/api/thumbs/242x286/text/webdoc.png\"
+        permissions=\"gdcenopstuvhk\"  ><tags></tags></file><file id=\"2184549493\"
+        file_name=\"Web document.webdoc\" shared=\"0\" sha1=\"01298c01639d867f841df8043cedc891cf11d8f0\"
+        created=\"1336405170\" updated=\"1336405170\" size=\"4\" shared_link=\"\"
+        description=\"\" user_id=\"176951347\" thumbnail=\"https://www.box.net/api/thumbs/27x30/text/webdoc.gif\"
+        small_thumbnail=\"https://www.box.net/api/thumbs/27x30/text/webdoc.gif\" large_thumbnail=\"https://www.box.net/api/thumbs/43x51/text/webdoc.gif\"
+        larger_thumbnail=\"https://www.box.net/api/thumbs/43x51/text/webdoc.gif\"
+        preview_thumbnail=\"https://www.box.net/api/thumbs/242x286/text/webdoc.png\"
+        permissions=\"gdcenopstuvhk\"  ><tags></tags></file></files></folder></tree></response>"
+    http_version: 
+  recorded_at: Mon, 14 May 2012 12:01:07 GMT
+recorded_with: VCR 2.1.1

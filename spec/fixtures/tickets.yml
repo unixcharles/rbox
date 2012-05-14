@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.box.net/api/1.0/rest?action=get_ticket&api_key=unique-api-token&auth_token=unique-auth-token
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      server:
+      - nginx
+      date:
+      - Mon, 14 May 2012 11:25:42 GMT
+      content-type:
+      - text/xml
+      connection:
+      - close
+      set-cookie:
+      - z=l2foploo02tig3dhcb1nl28n41; path=/; domain=.box.net; HttpOnly, box_visitor_id=4fb0ebb6170450.10620016;
+        expires=Tue, 14-May-2013 11:25:42 GMT; path=/; domain=.box.net
+      expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      cache-control:
+      - cache, must-revalidate
+      pragma:
+      - public
+      content-length:
+      - '141'
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version='1.0' encoding='UTF-8' ?>\r\n<response><status>get_ticket_ok</status><ticket>unique-secret-ticket</ticket></response>"
+    http_version: 
+  recorded_at: Mon, 14 May 2012 11:25:42 GMT
+- request:
+    method: get
+    uri: https://www.box.net/api/1.0/rest?action=get_account_info&api_key=unique-api-token&auth_token=unique-auth-token
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      server:
+      - nginx
+      date:
+      - Mon, 14 May 2012 11:31:21 GMT
+      content-type:
+      - text/xml
+      connection:
+      - close
+      set-cookie:
+      - z=6ln24qcpq1jt0a9j2dvne18a92; path=/; domain=.box.net; HttpOnly, box_visitor_id=4fb0ed09231f97.11346879;
+        expires=Tue, 14-May-2013 11:31:21 GMT; path=/; domain=.box.net
+      expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      cache-control:
+      - cache, must-revalidate
+      pragma:
+      - public
+      content-length:
+      - '359'
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version='1.0' encoding='UTF-8' ?>\r\n<response><status>get_account_info_ok</status><user><login>unixcharles@gmail.com</login><email>unixcharles@gmail.com</email><access_id>176951347</access_id><user_id>176951347</user_id><space_amount>5368709120</space_amount><space_used>12205491</space_used><max_upload_size>104857600</max_upload_size></user></response>"
+    http_version: 
+  recorded_at: Mon, 14 May 2012 11:31:21 GMT
+recorded_with: VCR 2.1.1
