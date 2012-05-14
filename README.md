@@ -41,3 +41,8 @@ Pull request?
 =============
 
 Yes.
+
+Even if you're Linus Torvalds?
+==============================
+
+Yes.
