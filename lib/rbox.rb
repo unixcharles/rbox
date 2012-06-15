@@ -5,6 +5,7 @@ require 'rbox/download'
 require 'rbox/item'
 # Client class
 require 'rbox/client'
+require 'rbox/errors'
 
 # Utility methods modules
 require 'rbox/utils/collect_nested_key'

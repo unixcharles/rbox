@@ -19,8 +19,15 @@ module Rbox
         req.params[:file_id] = file_id
       end
 
-      response_file = response.body['response']['info']
-      response_file['id'] = response_file['file_id']
+      case response.body['response']['status']
+      when 's_get_file_info'
+        response_file = response.body['response']['info']
+        response_file['id'] = response_file['file_id']
+      when 'not_logged_in', 'e_access_denied'
+        raise Rbox::FileNotFoundError
+      when 'application_restricted'
+        raise Rbox::ApplicationRestricted
+      end
 
       Response::File.new(response_file, self)
     end
