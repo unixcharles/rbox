@@ -14,5 +14,5 @@ Gem::Specification.new do |gem|
   gem.require_paths = ['lib']
   gem.summary = %q{box.com API wrapper}
   gem.test_files = `git ls-files -- {spec}/*`.split("\n")
-  gem.version = '0.1.1'
+  gem.version = '0.1.2'
 end
