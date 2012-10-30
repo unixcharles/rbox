@@ -2,6 +2,7 @@
 
 Gem::Specification.new do |gem|
   gem.add_dependency 'faraday', '>= 0.7'
+  gem.add_dependency 'faraday_middleware', '>= 0.7'
   gem.add_dependency 'multi_xml', '~> 0.4.1'
 
   gem.authors = ["Charles Barbier"]
